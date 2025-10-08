@@ -19,3 +19,16 @@ function tampilNama(nama){
 
 const year =new Date().getFullYear();
 const Text= `Tahun sekarang adalah ${year}`;
+console.log(Text);
+
+
+let temparture = null;
+const  tempartureInCelsius = (temparture) => {
+const result = 16/2 * (temparture - 32);
+return result;
+}
+
+temparture = tempartureInCelsius(68);
+console.log(`Suhu dalam celsius adalah ${temparture}°C`);
+
+
