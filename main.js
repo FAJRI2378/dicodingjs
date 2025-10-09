@@ -13,7 +13,7 @@ tampil();
 console.log(name);
 
 
-function tampilNama(nama){
+function tampilNama (nama){
     console.log(`Halo, nama saya ${nama}`);
 }
 
@@ -31,4 +31,14 @@ return result;
 temparture = tempartureInCelsius(68);
 console.log(`Suhu dalam celsius adalah ${temparture}°C`);
 
+let temparture1 = null;
+const tempartureInCelsius1 = (temparture1) => (temparture1 - 32) * 5/9;
 
+temparture1 = tempartureInCelsius1(68);
+console.log(`Suhu dalam celsius adalah ${temparture1}°C`);
+
+function hello(name = "Fajri", origin = "Jakarta"){
+    console.log(`Hallo! Nama saya ${name}, saya berasal dari ${origin}.`);
+}
+
+hello();
